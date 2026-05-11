@@ -1,0 +1,234 @@
+:root {
+    --primary-color: darkblue;
+    --head-color: white;
+}
+
+/* Using the universal selector (*) to control the page layout. 
+This is very important and must be in all your css file*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+
+}
+
+#course-title {
+    text-align: center;
+    font-family: Roboto, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 23px;
+    color: darkblue;
+}
+
+header img,
+#course-title {
+    padding-top: 20px;
+
+}
+
+header nav {
+    background-color: darkblue;
+    display: none;
+    margin-top: 15px;
+
+}
+
+#menu {
+    display: block;
+    font-size: 3.0rem;
+    background-color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding-bottom: .4rem;
+    color: darkblue;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* When the button ≡ clicked Javascript makes it visible using temple.js code. 
+This code is very important to make the hamburger button interact with the html
+Here the nav element is connected to the temple.js code using the "show" keyword in the temple.js code */
+nav.show {
+    display: block;
+}
+
+/* The button before pressing */
+#menu::before {
+    content: "≡";
+}
+
+/* The button after pressing */
+#menu.show::before {
+    content: "X"
+}
+
+header nav a {
+    color: var(--head-color);
+    text-decoration: none;
+    display: block;
+    font-family: Roboto;
+    padding: 12px;
+    border-bottom: 2px solid white;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.home {
+    background-color: blue;
+}
+
+h1 {
+    padding-top: 10px;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.one {
+    margin-bottom: 30px;
+    border: 2px solid darkblue;
+}
+
+.one p {
+    font-family: Roboto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.two {
+    margin-bottom: 30px;
+    border: 2px solid darkblue;
+}
+
+.two img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+.card {
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    font-family: Roboto;
+    color: white;
+}
+
+.links h2 {
+    font-family: Roboto;
+    text-align: center;
+    background-color: darkblue;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.nav-button button {
+    text-decoration: none;
+    background-color: darkblue;
+    padding: 10px 8%;
+    color: white;
+    font-family: Roboto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.nav-button button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: darkblue solid 2px;
+    color: darkblue;
+}
+
+.display {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+    color: darkblue;
+    padding-bottom: 25px;
+}
+
+.byucourses {
+    font-family: Roboto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+}
+
+.byucourses p {
+    padding: 1rem 6rem;
+    color: white;
+    width: 100%;
+}
+
+.socialmedia {
+    padding: 10px;
+}
+
+.socialmedia a {
+    padding: 10px;
+}
+
+.socialmedia img {
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-family: Roboto;
+    font-weight: 800;
+    background-color: var(--primary-color);
+    color: var(--head-color);
+    margin-top: 15px;
+}

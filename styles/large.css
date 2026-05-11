@@ -1,0 +1,72 @@
+@media screen and (min-width: 500px) {
+
+    header,
+    footer {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    header nav {
+        display: flex;
+        padding-top: 10px;
+        margin-top: 10px;
+        padding-bottom: 17px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: sans-serif;
+        background-color: darkblue;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav-button button {
+        padding: 10px 11%;
+    }
+
+    header nav a{
+        border-bottom: none;
+    }
+
+    .display {
+        font-size: 20px;
+    }
+
+    .byucourses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .byucourses p {
+        padding: 1rem 4rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+
+    main {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .nav-button button {
+        padding: 13px 12%;
+    }
+
+    .byucourses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .byucourses p {
+        padding: 1rem 4rem;
+        font-size: 1rem;
+    }
+}

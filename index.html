@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Dynamic Web Fundamentals - Moses Olagbami</title>
+    <meta name="description"
+        content="Homepage for WDD 231 - Dynamic Web Fundamentals by Moses Olagbami, with links to course sections and web development resources.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/chamber.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/student.svg" alt="student">
+        <span id="course-title">Moses Olagbami</span>
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="#" class="home">Home💡</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="card">
+            <section class="one">
+                <h2>About Me</h2>
+                <p>My name is Moses Olagbami. I am a software development student
+                    based in Lagos, Nigeria, studying through BYU-Idaho and BYU-Pathway Worldwide.
+                    I’m building my skills in full stack development and working toward becoming a
+                    professional software developer.</p>
+            </section>
+
+            <section class="two">
+                <h2>Student Photo</h2>
+                <img src="images/moses-olagbami.webp" alt="Moses Image">
+            </section>
+        </div>
+
+        <section class="links">
+            <h2>Web Certification Courses</h2>
+            <nav class="nav-button" id="navigate">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </nav>
+            <p class="display"></p>
+            <div class="byucourses"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="40">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="40">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="40">
+            </a>
+        </nav>
+
+        <p>
+            &copy; <span id="currentyear"></span> Moses Olagbami | Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+
+</body>
+
+</html>
