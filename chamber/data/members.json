@@ -1,0 +1,88 @@
+{
+    "companies": [
+        {
+            "companyName": "Lagos Tech Solutions Ltd",
+            "companyAddress": "12 Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+            "phoneNumber": "+2348012345671",
+            "websiteUrl": "https://www.lagostechsolutions.com",
+            "imageFile": "./images/tech.webp",
+            "membershipLevel": "3 - Gold",
+            "category": "Technology",
+            "description": "Provides software development, IT consulting, and digital transformation services.",
+            "email": "info@lagostechsolutions.com",
+            "foundedYear": 2018
+        },
+        {
+            "companyName": "Naija Agro Exports",
+            "companyAddress": "5 Industrial Avenue, Apapa, Lagos, Nigeria",
+            "phoneNumber": "+2348012345672",
+            "websiteUrl": "https://www.naijaagroexports.com",
+            "imageFile": "./images/agriculture.webp",
+            "membershipLevel": "2 - Silver",
+            "category": "Agriculture",
+            "description": "Exports cocoa, sesame seeds, and other agricultural products worldwide.",
+            "email": "contact@naijaagroexports.com",
+            "foundedYear": 2012
+        },
+        {
+            "companyName": "Swift Logistics Nigeria",
+            "companyAddress": "22 Airport Road, Ikeja, Lagos, Nigeria",
+            "phoneNumber": "+2348012345673",
+            "websiteUrl": "https://www.swiftlogisticsng.com",
+            "imageFile": "./images/logistic.webp",
+            "membershipLevel": "2 - Silver",
+            "category": "Logistics",
+            "description": "Offers nationwide courier, delivery, and supply chain solutions.",
+            "email": "support@swiftlogisticsng.com",
+            "foundedYear": 2016
+        },
+        {
+            "companyName": "Golden Palm Hotels",
+            "companyAddress": "8 Victoria Island Road, Victoria Island, Lagos, Nigeria",
+            "phoneNumber": "+2348012345674",
+            "websiteUrl": "https://www.goldenpalmhotels.com",
+            "imageFile": "./images/hotel.webp",
+            "membershipLevel": "3 - Gold",
+            "category": "Hospitality",
+            "description": "Luxury hotel offering accommodation, conference halls, and event services.",
+            "email": "reservations@goldenpalmhotels.com",
+            "foundedYear": 2008
+        },
+        {
+            "companyName": "Bright Future Schools",
+            "companyAddress": "15 Education Drive, Surulere, Lagos, Nigeria",
+            "phoneNumber": "+2348012345675",
+            "websiteUrl": "https://www.brightfutureschools.ng",
+            "imageFile": "./images/school.webp",
+            "membershipLevel": "1 - Member",
+            "category": "Education",
+            "description": "Private school providing quality primary and secondary education.",
+            "email": "admin@brightfutureschools.ng",
+            "foundedYear": 2010
+        },
+        {
+            "companyName": "Metro Construction Ltd",
+            "companyAddress": "30 Construction Lane, Ikoyi, Lagos, Nigeria",
+            "phoneNumber": "+2348012345676",
+            "websiteUrl": "https://www.metroconstructionng.com",
+            "imageFile": "./images/construction.webp",
+            "membershipLevel": "3 - Gold",
+            "category": "Construction",
+            "description": "Specialists in residential and commercial building projects across Nigeria.",
+            "email": "info@metroconstructionng.com",
+            "foundedYear": 2005
+        },
+        {
+            "companyName": "FreshMart Superstores",
+            "companyAddress": "18 Shopping Mall Road, Yaba, Lagos, Nigeria",
+            "phoneNumber": "+2348012345677",
+            "websiteUrl": "https://www.freshmartng.com",
+            "imageFile": "./images/mall.webp",
+            "membershipLevel": "2 - Silver",
+            "category": "Retail",
+            "description": "Modern supermarket chain offering groceries and household goods.",
+            "email": "support@freshmartng.com",
+            "foundedYear": 2014
+        }
+    ]
+}

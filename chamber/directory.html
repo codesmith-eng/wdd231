@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Dynamic Web Fundamentals - Moses Olagbami</title>
+    <meta name="description"
+        content="Homepage for the Lagos Chamber of Commerce directory with business listings, member resources, services, and networking.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/lagos-chamber.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media meta tag -->
+    <meta property="og:title" content="Lagos Chamber of Commerce Directory | Business Listings & Resources">
+    <meta property="og:description"
+        content="Explore the Lagos Chamber of Commerce directory with business listings, member resources, services, and networking.">
+    <meta property="og:url" content=" ">
+    <meta property="og:image" content=" ">
+</head>
+
+<body>
+    <header>
+        <div class="now">
+            <img src="images/chamber-of-commerce.svg" alt="chamber of commerce" width="60">
+            <p class="main-title">Lagos Chamber of Commerce</p>
+        </div>
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="#" class="home">Home💡</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Chamber of Commerce" loading="lazy">
+            </picture>
+            <span>Membership Ticket Available</span>
+        </div>
+        <h1>Home</h1>
+
+        <div class="second">
+            <section class="event">
+                <h2>Events</h2>
+            </section>
+
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <article class="split">
+                    <div>
+                        <img src="images/weather.svg" alt="weather" width="100">
+                    </div>
+                    <div>
+                        <p>75°C</p>
+                        <p>Partly Cloudy</p>
+                        <p>High 85°</p>
+                        <p>Low 52°</p>
+                        <p>Humidity 34%</p>
+                        <p>Sunrise: 7:00am</p>
+                        <p>Sunset: 7:30pm</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <p>Today: 90°C</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </section>
+        </div>
+
+        <div class="menu">
+            <button id="grid" class="clickable">Grid</button>
+            <button id="list" class="clickit">List</button>
+        </div>
+        <div>
+            <article id="companies" class="grid"></article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">Lagos Chamber of Commerce</p>
+            <p>20, Alausa Ikeja Lagos</p>
+            <p>Lagos, Nigeria</p>
+            <p>info@lagoschamber.org</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+        <div class="foot-two">
+            <p>WDD231 Class Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

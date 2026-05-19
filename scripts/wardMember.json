@@ -1,0 +1,28 @@
+{
+    "familyName": "Olagbami",
+    "moveInDate": "17, April, 2023",
+    "numberOfPeople": 4,
+    "ifVisited": true,
+    "familyData": [
+        {
+            "name": "Keshinro Bolanle",
+            "gender": "Female",
+            "birthdate": "8, Feb 1990"
+        },
+        {
+            "name": "Moses Olagbami",
+            "gender": "Male",
+            "birthdate": "7, Feb 1994"
+        },
+        {
+            "name": "Keshinro Pelumi",
+            "gender": "Male",
+            "birthdate": "12, Aug 2005"
+        },
+        {
+            "name": "Olagbami Pelumi",
+            "gender": "Male",
+            "birthdate": "24, Jul 2005"
+        }
+    ]
+}

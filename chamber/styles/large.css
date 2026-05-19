@@ -1,0 +1,134 @@
+@media screen and (min-width: 500px) {
+
+    header,
+    footer {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    header nav a {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .grid {
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .now p {
+        width: 100%;
+        margin-top: 50px;
+        font-size: 1.4rem;
+    }
+
+    .list section h2 {
+        font-size: 1rem;
+    }
+
+    .list section a {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    header,
+    footer {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 1400px;
+    }
+
+    .now {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .now p {
+        color: white;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #003366;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        border: none;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    header nav a:hover {
+        font-weight: 900;
+    }
+
+    .hero span {
+        font-size: 1.5rem;
+        bottom: 90px;
+        right: -60px;
+    }
+
+    .second {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 15px;
+    }
+
+    .event {
+        padding-bottom: 270px;
+    }
+
+    .forecast {
+        padding-bottom: 140px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .grid section {
+        width: 80%;
+    }
+
+    .list section h2 {
+        font-size: 1.5rem;
+    }
+
+    .list section .underline {
+        display: block;
+    }
+
+    .list section a {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
