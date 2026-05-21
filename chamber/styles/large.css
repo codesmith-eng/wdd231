@@ -23,12 +23,23 @@
         font-size: 1.4rem;
     }
 
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.9rem;
+        align-content: center;
+    }
+
+    .underline{
+        font-size: 1.3rem;
+    }
     .list section h2 {
         font-size: 1rem;
     }
 
     .list section a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        border:none;
     }
 
 

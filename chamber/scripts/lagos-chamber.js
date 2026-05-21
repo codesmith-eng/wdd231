@@ -33,8 +33,9 @@ const cards = document.querySelector(".grid");
 async function getCompany() {
     const response = await fetch(url);  //using fetch api to fetch data from the url
     const data = await response.json(); //converting the fetch data to javascript object using .json()
-    displayCompany(data.companies);
-}
+    displayCompany(data.companies); //calling the displayCompany() function and passing the fetched data.companies to it
+}                                   //data is the variable that holds the fetched data
+//companies is the name of the json file in members.json
 
 //function calls
 getCompany();
@@ -51,7 +52,7 @@ const displayCompany = (companies) => {
         // Create HTML elements
         let section = document.createElement("section");
         let businessName = document.createElement("h2");
-        let phone = document.createElement("p");
+        let phone = document.createElement("span");
         let image = document.createElement("img");
         let category = document.createElement("p");
         let email = document.createElement("p");
@@ -59,7 +60,7 @@ const displayCompany = (companies) => {
 
         // Add data to elements
         businessName.textContent = company.companyName;
-        phone.innerHTML = `<span class="underline">PHONE: </span> ${company.phoneNumber}`;
+        phone.innerHTML = `<span class="underline">PHONE: ${company.phoneNumber}</span>`;
         category.innerHTML = `<span>CATEGORY: </span> ${company.category}`;
         email.innerHTML = `<span>EMAIL: </span> ${company.email}`;
 
@@ -98,14 +99,14 @@ const display = document.querySelector("#companies");
 
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
