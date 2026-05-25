@@ -122,6 +122,29 @@ header nav {
   position: relative;
 }
 
+.hero a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  padding:10px;
+  color: white;
+  background-color: #003366;
+  width: 40%;
+  margin: 0 auto;
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  border: 2px solid #003366;
+  border-radius: 10px;
+}
+
+.hero a:hover{
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
+}
 .hero img {
   width: 100%;
   height: auto;
@@ -157,12 +180,13 @@ h2 {
 }
 
 .event {
-  padding-bottom: 180px;
+  height: 300px;
+  display: block;
 }
 
 .weather {
   margin-top: 20px;
-  padding-bottom: 40px;
+  height: 300px;
 }
 
 .split {
@@ -177,7 +201,7 @@ h2 {
 
 .forecast {
   margin-top: 20px;
-  padding-bottom: 20px;
+  height:300px;
   line-height: 40px;
 }
 
@@ -185,6 +209,7 @@ h2 {
   margin-left: 20px;
   font-family: var(--font-family);
   font-size: 1.2rem;
+  margin-left: 100px;
 }
 
 .menu {
@@ -238,7 +263,7 @@ h2 {
   text-align: center;
 }
 
-.underline {
+.grid span {
   font-family: var(--font-family);
   font-weight: 600;
   padding: 5px;
@@ -272,7 +297,7 @@ h2 {
   flex-direction: column;
   width: 100%;
   font-family: var(--font-family);
-  
+  justify-content: center;
 }
 
 .list section>* {
@@ -306,6 +331,12 @@ h2 {
   font-size: .8rem;
 }
 
+.list span{
+  text-align:center;
+  display: block;
+  padding: 5px;
+  font-weight: 600;
+}
 
 footer {
   font-family: var(--font-family);

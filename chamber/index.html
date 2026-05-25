@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory of the Lagos Chamber of Commmerce</title>
+    <title>Homepage of the Lagos Chamber of Commmerce</title>
     <meta name="description"
-        content="Directory page for the Lagos Chamber of Commerce directory with business listings, member resources, services, and networking.">
+        content="Homepage for the Lagos Chamber of Commerce with business listings, member resources, services, and networking.">
     <meta name="author" content="Moses Olagbami Ayobami">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/small.css">
     <link rel="stylesheet" href="./styles/large.css">
-    <script src="./scripts/lagos-chamber.mjs" defer></script>
+    <script src="./scripts/lagos-chamber.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +22,10 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- Social Media meta tag -->
-    <meta property="og:title" content="Lagos Chamber of Commerce Directory | Business Listings & Resources">
+    <meta property="og:title" content="Homepage for Lagos Chamber of Commerce | Business Listings & Resources">
     <meta property="og:description"
-        content="Explore the Lagos Chamber of Commerce directory with business listings, member resources, services, and networking.">
-    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/chamber/directory.html">
+        content="Explore homepage for Lagos Chamber of Commerce with business listings, member resources, services, and networking.">
+    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://codesmith-eng.github.io/wdd231/chamber/images/chamber-of-commerce.svg">
 </head>
 
@@ -37,14 +37,15 @@
         </div>
         <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
         <nav class="hamb">
-            <a href="#">Home</a>
-            <a href="#" class="home">Directory💡</a>
+            <a href="#" class="home">Home💡</a>
+            <a href="#">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
     </header>
     <main>
         <div class="hero">
+            <a href="#">Become a Member</a>
             <picture>
                 <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
@@ -63,27 +64,25 @@
                 <h2>Current Weather</h2>
                 <article class="split">
                     <div>
-                        <img src="images/weather.svg" alt="weather" width="100">
+                        <img id="weather-icon" src="" alt="" width="">
                     </div>
                     <div>
-                        <p>75°C</p>
-                        <p>Partly Cloudy</p>
-                        <p>High 85°</p>
-                        <p>Low 52°</p>
-                        <p>Humidity 34%</p>
-                        <p>Sunrise: 7:00am</p>
-                        <p>Sunset: 7:30pm</p>
+                        <p class="temp"></p>
+                        <p class="cloud"></p>
+                        <p class="humidity"></p>
+
                     </div>
                 </article>
             </section>
 
             <section class="forecast">
                 <h2>Weather Forecast</h2>
-                <p>Today: 90°C</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
+                <p class="today"></p>
+                <p class="tomorrow"></p>
+                <p class="nexttomorrow"></p>
             </section>
         </div>
+
 
         <div class="menu">
             <button id="grid" class="clickable">Grid</button>
