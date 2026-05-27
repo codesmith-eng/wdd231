@@ -13,7 +13,6 @@ const display = document.querySelector("#companies");
 const currentTemp = document.querySelector('.temp');
 const weatherCloud = document.querySelector('.cloud');
 const weatherHumidity = document.querySelector('.humidity');
-const weatherIcon = document.querySelector('#weather-icon');
 
 const tempToday = document.querySelector('.today');
 const tempTomorrow = document.querySelector('.tomorrow');
@@ -174,16 +173,9 @@ fetchWeather();
 function displayCurrentWeather(data) {
     const current = data.list[0];
 
-    if (currentTemp) currentTemp.innerHTML = `<span>Temp: </span>${Math.round(current.main.temp)}&deg;C`;
-    if (weatherCloud) weatherCloud.innerHTML = current.weather[0].description;
+    if (currentTemp) currentTemp.innerHTML = `<span>Temperature: </span>${Math.round(current.main.temp)}&deg;C`;
+    if (weatherCloud) weatherCloud.innerHTML = `<span>Weather Description: </span>${current.weather[0].description}`;
     if (weatherHumidity) weatherHumidity.innerHTML = `<span>Humidity: </span>${current.main.humidity}%`;
-
-    if (weatherIcon) {
-        const iconsrc = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
-        weatherIcon.setAttribute('src', iconsrc);
-        weatherIcon.setAttribute('alt', data.city.name);
-        weatherIcon.setAttribute('width', "150");
-    }
 }
 
 function displayThreeDayForecast(data) {

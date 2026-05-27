@@ -204,7 +204,8 @@ h2 {
 
 .split p {
   font-size: 1.2rem;
-  line-height: 30px;
+  line-height: 40px;
+  margin-left: 40px;
 }
 
 .forecast {
