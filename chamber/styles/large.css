@@ -17,6 +17,9 @@
         margin: 0 auto;
     }
 
+    .hero a{
+        width: 300px;
+    }
     .now p {
         width: 100%;
         margin-top: 50px;
