@@ -1,0 +1,52 @@
+{
+    "companies": [
+        {
+            "companyName": "Lagos Tech Solutions Ltd",
+            "companyAddress": "12 Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+            "phoneNumber": "+2348012345671",
+            "websiteUrl": "https://www.lagostechsolutions.com",
+            "imageFile": "./images/tech.webp",
+            "membershipLevel": "NP Membership ",
+            "category": "Technology",
+            "description": "Provides software development, IT consulting, and digital transformation services.",
+            "email": "info@lagostechsolutions.com",
+            "foundedYear": 2018
+        },
+        {
+            "companyName": "Naija Agro Exports",
+            "companyAddress": "5 Industrial Avenue, Apapa, Lagos, Nigeria",
+            "phoneNumber": "+2348012345672",
+            "websiteUrl": "https://www.naijaagroexports.com",
+            "imageFile": "./images/agriculture.webp",
+            "membershipLevel": "1 - Bronze",
+            "category": "Agriculture",
+            "description": "Exports cocoa, sesame seeds, and other agricultural products worldwide.",
+            "email": "contact@naijaagroexports.com",
+            "foundedYear": 2012
+        },
+        {
+            "companyName": "Swift Logistics Nigeria",
+            "companyAddress": "22 Airport Road, Ikeja, Lagos, Nigeria",
+            "phoneNumber": "+2348012345673",
+            "websiteUrl": "https://www.swiftlogisticsng.com",
+            "imageFile": "./images/logistic.webp",
+            "membershipLevel": "2 - Silver",
+            "category": "Logistics",
+            "description": "Offers nationwide courier, delivery, and supply chain solutions.",
+            "email": "support@swiftlogisticsng.com",
+            "foundedYear": 2016
+        },
+        {
+            "companyName": "Golden Palm Hotels",
+            "companyAddress": "8 Victoria Island Road, Victoria Island, Lagos, Nigeria",
+            "phoneNumber": "+2348012345674",
+            "websiteUrl": "https://www.goldenpalmhotels.com",
+            "imageFile": "./images/hotel.webp",
+            "membershipLevel": "3 - Gold",
+            "category": "Hospitality",
+            "description": "Luxury hotel offering accommodation, conference halls, and event services.",
+            "email": "reservations@goldenpalmhotels.com",
+            "foundedYear": 2008
+        }
+    ]
+}

@@ -376,3 +376,107 @@ footer {
 .foot-two {
   line-height: 27px;
 }
+
+.join {
+  text-align: center;
+}
+
+.fill-form {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-size: clamp(20px, 1.0vw, 30px);
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+label {
+  display: block;
+  text-align: left;
+  font-size: clamp(15px, 1.0vw, 25px);
+  margin-top: 10px;
+  font-family: Roboto;
+  font-weight: 800;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(15px, 1.0vw, 25px);
+  color: #1a1919;
+  font-family: Roboto;
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6e1709;
+  box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+  border-bottom: 5px solid #6e1709;
+}
+
+.press {
+  padding: 10px;
+  margin: 30px;
+  background-color: darkblue;
+  color: white;
+  font-size: clamp(15px, 1.0vw, 25px);
+  font-weight: 600;
+  border-radius: 8px;
+  font-family: Roboto;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: white;
+  color: darkblue;
+  border: 2px solid darkblue;
+  cursor: pointer;
+}
+
+.fill-form input {
+  margin-bottom: 1.3rem;
+  color: black;
+}
+
+.fill-item select {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: Roboto;
+  font-size: .9rem;
+}
+
+label[for="description"] {
+  margin-top: 1rem;
+}
+
+textarea[id="description"] {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+textarea[id="description"]:focus {
+  outline: none;
+  border-color: #6e1709;
+  box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+  border-bottom: 5px solid #6e1709;
+}
+
+.fill-item select:hover {
+  outline: none;
+  border-color: #6e1709;
+  box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+}

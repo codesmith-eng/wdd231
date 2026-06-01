@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Lagos Chamber of Commmerce</title>
+    <meta name="description"
+        content="Join the Lagos Chamber of Commerce to access networking opportunities, business resources, training, events, and membership benefits.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/join-small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/lagos-chamber-join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media meta tag -->
+    <meta property="og:title" content="Join the Lagos Chamber of Commerce to access Business Listings & Resources">
+    <meta property="og:description"
+        content="Join the Lagos Chamber of Commerce to access business listings, member resources, services, and networking.">
+    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://codesmith-eng.github.io/wdd231/chamber/images/chamber-of-commerce.svg">
+</head>
+
+<body>
+    <header>
+        <div class="now">
+            <img src="images/chamber-of-commerce.svg" alt="chamber of commerce" width="60">
+            <p class="main-title">Lagos Chamber of Commerce</p>
+        </div>
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#" class="home">Join💡</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="join">BECOME A MEMBER</h1>
+
+        <div class="divide">
+            <form method="get" action="thankyou.html" class="fill-form">
+                <div class="fill-item part1">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required title="Enter your first name"
+                        autocomplete="given-name">
+                </div>
+
+                <div class="fill-item part1">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required title="Enter your last name"
+                        autocomplete="family-name">
+                </div>
+
+                <div>
+                    <label for="orgtitle">Organizational Title</label>
+                    <input type="text" id="orgtitle" name="orgtitle" title="Enter your organizational title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Operations Manager">
+                </div>
+
+                <div class="fill-item part1">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required title="Enter your email address"
+                        autocomplete="email" placeholder="example@email.com">
+                </div>
+
+                <div class="fill-item part1">
+                    <label for="phone">Mobile Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number"
+                        autocomplete="tel">
+                </div>
+
+                <div class="fill-item part1">
+                    <label for="organization">Organization Name</label>
+                    <input type="text" id="organization" name="organization" required
+                        title="Enter your organization name" autocomplete="organization">
+                </div>
+
+                <div class="fill-item">
+                    <label for="membership">Membership Level</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Select a Membership Level</option>
+                        <option value="np-membership">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </div>
+
+                <div class="fill-item part4">
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" title="Describe your business" rows="5"></textarea>
+                </div>
+
+                <div class="fill-item part5">
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </div>
+
+                <button type="submit" class="press">Join</button>
+            </form>
+
+            <section>
+                <div class="display card1">
+                    <h2>NP Membership</h2>
+                    <p>Free membership for non-profit organizations.</p>
+                    <button id="openbutton1">Learn More</button>
+                </div>
+
+                <div class="display card2">
+                    <h2>Bronze Membership</h2>
+                    <p>Entry-level membership benefits.</p>
+                    <button id="openbutton2">Learn More</button>
+                </div>
+
+                <div class="display card3">
+                    <h2>Silver Membership</h2>
+                    <p>Additional business growth benefits.</p>
+                    <button id="openbutton3">Learn More</button>
+                </div>
+
+                <div class="display card4">
+                    <h2>Gold Membership</h2>
+                    <p>Premium membership package.</p>
+                    <button id="openbutton4">Learn More</button>
+                </div>
+
+                <dialog id="dialogBox">
+                    <div>
+                        <h2></h2>
+                        <button id="closeButton">X</button>
+                    </div>
+                    <p class="one"></p>
+                    <p class="two"></p>
+                    <p class="three"></p>
+                    <p class="four"></p>
+                </dialog>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">Lagos Chamber of Commerce</p>
+            <p>20, Alausa Ikeja Lagos</p>
+            <p>Lagos, Nigeria.</p>
+            <p>info@lagoschamber.org</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+        <div class="foot-two">
+            <p>WDD231 Class Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

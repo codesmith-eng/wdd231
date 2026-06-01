@@ -1,0 +1,510 @@
+:root {
+    --primary-color: #003366;
+    /* Navbar/Header with white text */
+    --secondary-color: #B8860B;
+    /* Buttons with white text*/
+    --background-color: #F5F7FA;
+    /* Page Background */
+    --cards: #FFFFFF;
+    /* for cards */
+    --text-color: #1F2937;
+    /* Dark Gray */
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.now {
+    display: flex;
+}
+
+.now p {
+    display: block;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    margin-top: 25px;
+
+}
+
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: var(--font-family);
+    padding: 12px;
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.4rem;
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 6px;
+    text-align: center;
+}
+
+header nav a:hover {
+    cursor: pointer;
+    color: #B8860B;
+}
+
+header img {
+    margin-top: 10px;
+    display: block;
+}
+
+.home {
+    background-color: rgb(18, 18, 76);
+    border-bottom: 5px solid #B8860B;
+}
+
+#menu {
+    display: block;
+    font-size: 3.0rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding-bottom: .4rem;
+    color: #003366;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* When the button ≡ clicked Javascript makes it visible using temple.js code. 
+This code is very important to make the hamburger button interact with the html
+Here the nav element is connected to the temple.js code using the "show" keyword in the temple.js code */
+nav.show {
+    display: block;
+}
+
+/* The button before pressing */
+#menu::before {
+    content: "≡";
+}
+
+/* The button after pressing */
+#menu.show::before {
+    content: "X"
+}
+
+.center {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: 800;
+}
+
+header nav {
+    display: none;
+    margin-top: 15px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    padding: 10px;
+    color: white;
+    background-color: #003366;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+.hero a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero span {
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    position: absolute;
+    bottom: 60px;
+    right: -10px;
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
+h1 {
+    font-family: Roboto;
+    margin-top: 10px;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 3px
+}
+
+
+.grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.grid h2 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.grid p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
+
+.grid span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.grid a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.grid a:hover {
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.grid section {
+    border-bottom: 2px solid #003366;
+}
+
+
+footer {
+    font-family: var(--font-family);
+    margin-top: 20px;
+    padding: 18px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.foot-one {
+    line-height: 27px;
+}
+
+.socialmedia img {
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialmedia img:hover {
+    cursor: pointer;
+}
+
+.foot-two {
+    line-height: 27px;
+}
+
+.join {
+    text-align: center;
+}
+
+.fill-form {
+    display: block;
+    text-align: center;
+    font-family: Roboto;
+    font-size: clamp(20px, 1.0vw, 30px);
+    margin-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+label {
+    display: block;
+    text-align: left;
+    font-size: clamp(15px, 1.0vw, 25px);
+    margin-top: 10px;
+    font-family: Roboto;
+    font-weight: 800;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: clamp(15px, 1.0vw, 25px);
+    color: #1a1919;
+    font-family: Roboto;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6e1709;
+    box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+    border-bottom: 5px solid #6e1709;
+}
+
+.press {
+    padding: 10px;
+    margin: 20px 0 30px 0;
+    background-color: darkblue;
+    color: white;
+    font-size: clamp(15px, 1.0vw, 25px);
+    font-weight: 600;
+    border-radius: 8px;
+    font-family: Roboto;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid darkblue;
+    cursor: pointer;
+}
+
+.fill-form input {
+    margin-bottom: 1.3rem;
+    color: black;
+}
+
+.fill-item select {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: Roboto;
+    font-size: .9rem;
+}
+
+label[for="description"] {
+    margin-top: 1rem;
+}
+
+textarea[id="description"] {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+textarea[id="description"]:focus {
+    outline: none;
+    border-color: #6e1709;
+    box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+    border-bottom: 5px solid #6e1709;
+}
+
+.fill-item select:hover {
+    outline: none;
+    border-color: #6e1709;
+    box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
+}
+
+
+section div {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    background-color: rgb(206, 207, 245);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+section p {
+    font-family: Roboto;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.display button {
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.display button:hover {
+    cursor: pointer;
+}
+
+#dialogBox {
+    border-radius: 20px;
+    background-color: rgb(206, 207, 245);
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 8rem #777;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+}
+
+#dialogBox div {
+    display: grid;
+    grid-template-columns: auto 48px;
+    height: auto;
+    width: 100%;
+    background-color: #003366;
+    gap: 20px;
+}
+
+#dialogBox h2 {
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.one,
+.two,
+.three,
+.four {
+    font-family: Roboto;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+#closeButton {
+    color: rgb(160, 40, 50);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+/* use backdrop anytime you use modal or dialog box */
+::backdrop {
+    background-color: rgba(179, 202, 223, 0.5);
+}
+
+.thanks{
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: 600;
+    padding: 0 0 20px 0
+}
+
+#result{
+    font-family: Roboto;
+    line-height: 40px;
+    font-size: 1.2rem;
+    background-color: #cdddef;
+    padding: 0 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    margin: 0 0 40px 0;
+    font-weight: 500;
+}
+
+.display {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+.card1 {
+    animation-delay: 0.2s;
+}
+
+.card2 {
+    animation-delay: 0.4s;
+}
+
+.card3 {
+    animation-delay: 0.6s;
+}
+
+.card4 {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
