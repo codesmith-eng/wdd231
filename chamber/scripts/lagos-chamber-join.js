@@ -109,6 +109,12 @@ console.log(myInfo);
 
 const inputDetails = document.querySelector('#result');
 
+const timeStamp = document.querySelector('#timestamp');
+
+if (timeStamp){
+    timeStamp.value = new Date().toLocaleDateString() + " - " + new Date().toLocaleTimeString()
+}
+
 if (inputDetails) {
     inputDetails.innerHTML = `
 <p> Name: ${myInfo.get('firstname')} ${myInfo.get('lastname')}</p>
@@ -118,5 +124,5 @@ if (inputDetails) {
 <p>Organizational Name: ${myInfo.get('organization')}</p>
 <p>Membership Level: ${myInfo.get('membership')}</p>
 <p>Business Description: ${myInfo.get('description')}</p>
-<p>Submitted at: ${myInfo.get('timestamp').value = new Date().toLocaleDateString() + " - " + new Date().toLocaleTimeString()}</p>`
+<p>Submitted at: ${myInfo.get('timestamp')}</p>`
 }
