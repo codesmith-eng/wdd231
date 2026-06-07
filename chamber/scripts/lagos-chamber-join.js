@@ -111,7 +111,8 @@ const inputDetails = document.querySelector('#result');
 
 const timeStamp = document.querySelector('#timestamp');
 
-if (timeStamp){
+//passing the current time the form loads to the timestamp
+if (timeStamp) {
     timeStamp.value = new Date().toLocaleDateString() + " - " + new Date().toLocaleTimeString()
 }
 
