@@ -1,5 +1,3 @@
-
-
 body {
     width: 1200px;
     margin: 0 auto;
@@ -11,7 +9,7 @@ h1,
 h2 {
     color: #1a73e8;
     font-family: "Roboto", sans-serif;
-    padding: 20px;
+    margin-bottom: -30px;
 }
 
 body,
@@ -19,17 +17,19 @@ p {
     color: #333333;
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
+
+}
+
+p {
+    margin-bottom: 10px;
     padding: 20px;
 }
 
-p{
-    margin-bottom: 10px;
-}
-
-section img{
+section img {
     width: 500px;
+    margin-top: 30px;
 }
 
-.desktop{
+.desktop {
     width: 800px;
 }
