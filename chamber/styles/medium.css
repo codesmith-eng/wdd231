@@ -1,0 +1,94 @@
+@media screen and (min-width: 640px) {
+
+    /* Re-arranging for wider views */
+    #card-templates div {
+        grid-template-areas:
+            /* creating two columns  where photograph takes the one column */
+            "photograph name"
+            "photograph description"
+            "photograph location"
+            "photograph button";
+    }
+
+    .now p {
+        width: 100%;
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    #card-templates div p {
+        margin-top: -130px;
+    }
+
+    #card-templates div address {
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    #card-templates div button {
+        margin-top: -10px;
+    }
+
+    #card-templates div img {
+        width: 300px;
+    }
+
+    #card-templates div img:hover {
+        cursor: pointer;
+        border-radius: 0 90px 0 80px;
+    }
+
+
+    header nav a{
+        font-size: .5rem;
+        padding: 10px;
+    }
+
+    header,
+    footer {
+        width: 100%;
+        max-width: 1500px;
+    }
+    
+    main{
+        width: 95%;
+        max-width: 1400px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #003366;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        border: none;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    header nav a:hover {
+        font-weight: 900;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .divide{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+}

@@ -480,3 +480,81 @@ textarea[id="description"]:focus {
   border-color: #6e1709;
   box-shadow: 0 0 30px rgba(8, 6, 128, 0.5);
 }
+
+/* use grid-template-areas to re-arrange the element in this card */
+#card-templates div {
+  margin: 1rem, 8px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border: 2px solid #999;
+  background-color: #eee;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+}
+
+#card-templates div h2 {
+  margin: 1rem 10px;
+  grid-area: name;
+  background-color: #eee;
+  color:#003366;
+  font-weight: 800;
+  font-family: Roboto;
+}
+
+#card-templates div img {
+  width: 100%;
+  grid-area: photograph;
+  height: auto;
+}
+
+#card-templates div p {
+  margin: 1rem 10px;
+  grid-area: description;
+  font-family: sans-serif;
+  text-align:center;
+}
+
+#card-templates div address {
+  margin: 1rem 10px;
+  grid-area: location;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#card-templates div button {
+  display: block;
+  margin: 0 auto;
+  padding: .8rem;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  grid-area: button;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  color: #003366;
+  background-color: white;
+  font-weight: 600;
+}
+
+.page-visits{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.the-head{
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 10px;
+  color: #003366;
+  font-weight: 900;
+}
