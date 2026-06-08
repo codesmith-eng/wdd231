@@ -12,6 +12,7 @@ h2 {
 
 body,
 p {
+    width: 1300px;
     color: #333333;
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
