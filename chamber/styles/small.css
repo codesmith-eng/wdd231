@@ -425,7 +425,6 @@ input:focus {
   margin: 30px;
   background-color: darkblue;
   color: white;
-  font-size: clamp(15px, 1.0vw, 25px);
   font-weight: 600;
   border-radius: 8px;
   font-family: Roboto;
@@ -483,7 +482,7 @@ textarea[id="description"]:focus {
 
 /* use grid-template-areas to re-arrange the element in this card */
 #card-templates div {
-  margin: 1rem, 8px;
+  margin: 1rem 8px;
   border-radius: 8px;
   margin-bottom: 40px;
   border: 2px solid #999;
@@ -503,7 +502,7 @@ textarea[id="description"]:focus {
   margin: 1rem 10px;
   grid-area: name;
   background-color: #eee;
-  color:#003366;
+  color: #003366;
   font-weight: 800;
   font-family: Roboto;
 }
@@ -518,7 +517,7 @@ textarea[id="description"]:focus {
   margin: 1rem 10px;
   grid-area: description;
   font-family: sans-serif;
-  text-align:center;
+  text-align: center;
 }
 
 #card-templates div address {
@@ -543,7 +542,7 @@ textarea[id="description"]:focus {
   font-weight: 600;
 }
 
-.page-visits{
+.page-visits {
   text-align: center;
   font-family: Roboto;
   font-size: 1.5rem;
@@ -551,7 +550,7 @@ textarea[id="description"]:focus {
   font-weight: 600;
 }
 
-.the-head{
+.the-head {
   text-align: center;
   font-size: 3rem;
   padding-top: 10px;
