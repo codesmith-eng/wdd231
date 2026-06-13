@@ -5,14 +5,13 @@
     --heading-font: Georgia, 'Times New Roman', Times, serif;
     --body-font: Arial, Helvetica, sans-serif;
     --head-color: rgb(18, 18, 105);
-    --body-font: Arial, Helvetica, sans-serif;
     --my-font: 'Trebuchet MS',
         'Lucida Sans Unicode',
         'Lucida Grande',
         'Lucida Sans',
         Arial,
         sans-serif;
-    --another-font: Roboto;
+    --another-font: Arial;
 }
 
 /* Using the universal selector (*) to control the page layout. 
