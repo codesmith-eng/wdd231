@@ -1,5 +1,5 @@
 @media screen and (min-width: 500px) {
-    .now span{
+    .now span {
         width: 100%;
     }
 }
@@ -47,7 +47,7 @@
     }
 
 
-    header nav a{
+    header nav a {
         font-size: .5rem;
         padding: 10px;
     }
@@ -57,8 +57,8 @@
         width: 100%;
         max-width: 1500px;
     }
-    
-    main{
+
+    main {
         width: 95%;
         max-width: 1400px;
     }
@@ -67,6 +67,7 @@
         display: grid;
         grid-template-columns: 1.5fr 1.9fr;
         background-color: #003366;
+        align-items: center;
     }
 
     header nav {
@@ -87,10 +88,14 @@
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        font-size: .9rem;
     }
 
-
-    .divide{
+    .socialmedia img{
+        width: 40px;
+    }
+    
+    .divide {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;

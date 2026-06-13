@@ -351,6 +351,7 @@ footer {
   padding: 18px;
   color: white;
   background-color: var(--primary-color);
+  text-align: center;
 }
 
 .bold {
