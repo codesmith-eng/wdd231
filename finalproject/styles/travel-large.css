@@ -1,0 +1,249 @@
+@media screen and (min-width: 640px) {
+    .hero h1 {
+        top: 20px;
+        font-size: 2.5rem;
+        font-family: Roboto;
+    }
+
+    .hero p {
+        top: 100px;
+        font-size: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    header nav a {
+        font-size: .9rem;
+        border-bottom: none;
+    }
+
+    .trip {
+        top: 200px;
+    }
+
+    .trip a {
+        font-size: clamp(15px, 1.0vw, 30px);
+    }
+
+    .history h2 {
+        font-size: 2rem;
+        font-family: Roboto;
+    }
+
+    .nav-button {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .image h2 {
+        font-size: 2.5rem;
+    }
+
+    .grid-services {
+        font-size: 2.5rem;
+    }
+
+    .fill-form h3 {
+        font-size: 1.8rem;
+    }
+
+    .fill-form p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+
+    .border-one {
+        width: 350px;
+    }
+
+    .border-two {
+        width: 350px;
+    }
+
+    .border-three {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .core-values {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .grid-about {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .grid-services section {
+
+        grid-template-areas:
+            "photograph name"
+            "photograph category"
+            "photograph description"
+
+    }
+
+    .grid-services img {
+        margin-top: 3rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    header,
+    main,
+    footer {
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    header nav a {
+        font-size: 1.4rem;
+
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        top: 150px;
+        font-size: 1.25rem;
+
+    }
+
+    .trip {
+        top: 400px;
+    }
+
+    .history h2 {
+        font-size: 2.5rem;
+    }
+
+    .offers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .nav-button {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 1.8rem;
+    }
+
+    .grid-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        gap: 10px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .grid-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .expand-eleven {
+        grid-row: span 2
+    }
+
+    .expand-one {
+        width: 100%;
+    }
+
+
+    .grid-services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+    .identity h1 {
+        font-size: 3rem;
+    }
+
+    .core-values {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .border-two {
+        height: 230px;
+        margin-bottom: 20px;
+    }
+
+    .border-three {
+        height: 200px;
+        margin-bottom: 50px;
+        width: 230px;
+    }
+
+    .ms {
+        margin-top: auto;
+    }
+
+    .map {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+    }
+
+    .comm {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

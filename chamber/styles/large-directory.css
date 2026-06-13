@@ -17,4 +17,13 @@
     .page-visits {
         font-size: 1.8rem;
     }
+
+    .now span{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    header nav a{
+        font-size: 1.5rem;
+    }
 }

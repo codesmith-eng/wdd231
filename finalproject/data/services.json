@@ -1,0 +1,109 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Study, Work & Migration Services",
+      "category": "Migration",
+      "description": "End-to-end guidance for study abroad programs, work permits, residency visas, and migration pathways including express entry opportunities.",
+      "image": "images/study.svg"
+    },
+    {
+      "id": 2,
+      "name": "Visa & Travel Documentation",
+      "category": "Documentation",
+      "description": "Professional visa processing support and travel insurance services to ensure smooth and stress-free travel preparation.",
+      "image": "images/documentation.svg"
+    },
+    {
+      "id": 3,
+      "name": "Flight Bookings",
+      "category": "Transportation",
+      "description": "Local and international flight booking services with competitive fares, flexible options, and dedicated support.",
+      "image": "images/flight-booking.svg"
+    },
+    {
+      "id": 4,
+      "name": "Business & Corporate Travel (MICE)",
+      "category": "Corporate",
+      "description": "Comprehensive planning and management of business trips, conferences, exhibitions, and corporate travel logistics.",
+      "image": "images/corporate.svg"
+    },
+    {
+      "id": 5,
+      "name": "Travel Consultation Services",
+      "category": "Consultation",
+      "description": "Expert travel advice covering destinations, visa requirements, route planning, and travel recommendations.",
+      "image": "images/consultation.svg"
+    },
+    {
+      "id": 6,
+      "name": "Charter & Luxury Travel",
+      "category": "Luxury",
+      "description": "Premium charter services including private aircraft, ferries, luxury cruises, and executive travel experiences.",
+      "image": "images/luxury.svg"
+    },
+    {
+      "id": 7,
+      "name": "Vacation & Tour Packages",
+      "category": "Tours",
+      "description": "Customized holiday packages, honeymoon getaways, sightseeing tours, and family vacation experiences.",
+      "image": "images/vacation.svg"
+    },
+    {
+      "id": 8,
+      "name": "Hotel Bookings & Reservations",
+      "category": "Accommodation",
+      "description": "Affordable and luxury accommodation booking services with access to top hotels worldwide.",
+      "image": "images/hotel.svg"
+    },
+    {
+      "id": 9,
+      "name": "Religious & Spiritual Pilgrimage Trips",
+      "category": "Pilgrimage",
+      "description": "Organized pilgrimage journeys including Hajj, Umrah, and Holy Land tours with complete travel arrangements.",
+      "image": "images/spiritual.svg"
+    },
+    {
+      "id": 10,
+      "name": "Airport Pickup & Transfer Services",
+      "category": "Transportation",
+      "description": "Reliable airport transfers, chauffeur services, and transportation arrangements for travelers.",
+      "image": "images/pickup.svg"
+    },
+    {
+      "id": 11,
+      "name": "Travel Insurance Plans",
+      "category": "Insurance",
+      "description": "Comprehensive travel insurance coverage protecting travelers against emergencies, delays, and unforeseen events.",
+      "image": "images/insurance.svg"
+    },
+    {
+      "id": 12,
+      "name": "Group Travel Coordination",
+      "category": "Group Travel",
+      "description": "Planning and coordination services for schools, churches, organizations, and large travel groups.",
+      "image": "images/group.svg"
+    },
+    {
+      "id": 13,
+      "name": "Adventure Travel Experiences",
+      "category": "Adventure",
+      "description": "Exciting adventure trips featuring safaris, hiking tours, outdoor expeditions, and eco-tourism experiences.",
+      "image": "images/adventure.svg"
+    },
+    {
+      "id": 14,
+      "name": "Travel Training & Seminars",
+      "category": "Education",
+      "description": "Workshops and seminars providing travelers with valuable knowledge on international travel and migration processes.",
+      "image": "images/training.svg"
+    },
+    {
+      "id": 15,
+      "name": "Destination Event Planning",
+      "category": "Events",
+      "description": "Professional planning for destination weddings, anniversaries, retreats, and special international events.",
+      "image": "images/planning.svg"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Travels</title>
+    <meta name="description"
+        content="Appointment Page for Prestige Travels, featuring travel consultations, booking appointments, trip planning, and personalized travel assistance.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="styles/travel-large.css">
+
+
+    <script src="scripts/travels.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Appointment Confirmed | Prestige Travels">
+    <meta property="og:description"
+        content="Your appointment with Prestige Travels has been successfully submitted. Our team will review your request and contact you shortly.">
+    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/finalproject/appointment.html">
+    <meta property="og:image" content="https://codesmith-eng.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Prestige Travels">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Prestige Travels" loading="lazy" width="80">
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="update">
+        <h1>Appointment Confirmed</h1>
+        <p>Your appointment has been successfully booked! We look forward to seeing you in our office to assist you with
+            your travel or visa
+            needs.
+        </p>
+        <p class="booking">Your Details are: </p>
+        <div id="thebooking"></div>
+
+        <!-- Local Storage -->
+        <p><span class="appointdate"></span><span class="appointclick"></span></p>
+    </main>
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">✈️✈️Prestige Travels✈️✈️</p>
+            <p>8 Taiwo Bashorun, Ekoro Lagos</p>
+            <p>Lagos, Nigeria.</p>
+            <p>prestige001@gmail.com</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="the-media">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+
+        <div class="foot-two">
+            <p>WDD231 Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

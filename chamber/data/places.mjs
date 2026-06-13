@@ -3,7 +3,7 @@ export const places = [
     {
         "name": "Lekki Conservation",
         "address": "Lekki-Epe Expressway, Lekki Peninsula, Lagos",
-        "description": "A 78-hectare nature reserve featuring Africa's longest canopy walkway and a sanctuary for diverse wildlife.",
+        "description": "A 78-hectare nature reserve featuring Africa's longest walkway and a sanctuary for diverse wildlife.",
         "image": "images/lekki-conservation.webp"
     },
     {

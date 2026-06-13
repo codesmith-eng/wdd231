@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Travels</title>
+    <meta name="description"
+        content="Homepage for Prestige Travels by Moses Olagbami, featuring travel services, tour packages, and travel tips.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="styles/travel-large.css">
+
+    <script src="scripts/travels.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media meta tag -->
+    <meta property="og:title" content="Prestige Travels | Explore the World with Confidence">
+    <meta property="og:description"
+        content="Discover exciting destinations, personalized travel planning, exclusive tour packages, and unforgettable travel experiences with Prestige Travels.">
+    <meta property="og:url" content="https://github.io/codesmith-eng/wdd231/finalproject/index.html">
+    <meta property="og:image" content="https://github.io/codesmith-eng/wdd231/finalproject/images/logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Prestige Travels">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Prestige Travels" loading="lazy" width="80">
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="index.html" class="wayfinding">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/travel.webp" media="(min-width: 1024px)">
+                <source srcset="images/background-now.webp" media="(min-width: 500px)">
+                <img src="images/background-image.webp" alt="Travel Pictures" loading="lazy">
+            </picture>
+            <h1>WELCOME TO PRESTIGE TRAVELS AND TOURS</h1>
+
+            <div class=" trip">
+                <a href="contact.html">Book an Appointment</a>
+            </div>
+        </div>
+
+        <section class="history">
+            <h2>WHAT WE OFFER</h2>
+            <div class="offers">
+                <img src="images/man-travelling.webp" alt="Man Travelling" loading="lazy">
+                <div>
+                    <p class="bold-one">------- Going somewhere? Go with -------</p>
+                    <p class="bold-two">PRESTIGE TRAVELS <span class="bold-three">AND TOURS</span></p>
+                    <p class="bold-four">Experience top-notch travel and tourism services in Nigeria with Prestige
+                        Travels. Our expertise, flexibility, and hospitality ensure every trip is tailored to your
+                        needs.
+                    </p>
+                    <p class="bold-four">From airfare and travel packages to visa support for countries like Uk, Us,
+                        Canada, France, Switzerland, Dubai, and Poland, we handle it all. Explore corporate travel,
+                        local and international tours,
+                        hotel reservations, honeymoon getaways, group travel, aircraft charters, and even overseas
+                        weddings with ease.</p>
+                    <ul class="bold-four-now">
+                        <li>Visa Guidance and Counselling</li>
+                        <li>Best Tour Selection</li>
+                        <li>Best Price Guarantee</li>
+                        <li>5 Star Accommodations</li>
+                        <li>24/7 Service</li>
+                    </ul>
+                    <a href="services.html">View Our Travel Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="image">
+            <h2>------ Popular Destinations ------</h2>
+            <p class="destination">Choose The Destination Just Right For Your Vacation</p>
+            <nav class="nav-button">
+                <a href="#" id="all">All</a>
+                <a href="#" id="usa">USA</a>
+                <a href="#" id="canada">Canada</a>
+                <a href="#" id="europe">Europe</a>
+                <a href="#" id="asia">Asian</a>
+                <a href="#" id="africa">Africa</a>
+            </nav>
+            <div class="grid-images">
+                <div class="expand-ten">
+                    <img src="images/usa-two.webp" alt="Beautiful city in USA" loading="lazy">
+                </div>
+                <div class="expand-six">
+                    <img src="images/canadian-city.webp" alt="Beautiful city in Canada" loading="lazy">
+                </div>
+                <div class="expand-eleven">
+                    <img src="images/usa-one.webp" alt="Beautiful city in USA" loading="lazy">
+                </div>
+                <div class="expand-three">
+                    <img src="images/toronto-canada.webp" alt="Beautiful city in Canada" loading="lazy">
+                </div>
+                <div class="expand-four">
+                    <img src="images/europe.webp" alt="Beautiful city in Europe" loading="lazy">
+                </div>
+                <div class="expand-five">
+                    <img src="images/europe-one.webp" alt="Beautiful city in Europe" loading="lazy">
+                </div>
+                <div class="expand-two">
+                    <img src="images/asia.webp" alt="Beautiful city in Asia" loading="lazy">
+                </div>
+                <div class="expand-seven">
+                    <img src="images/asia-one.webp" alt="Beautiful city in Asia" loading="lazy">
+                </div>
+                <div class="expand-eight">
+                    <img src="images/africa.webp" alt="Beautiful city in Africa" loading="lazy">
+                </div>
+                <div class="expand-ni">
+                    <img src="images/africa-one.webp" alt="Beautiful city in Africa" loading="lazy">
+                </div>
+                <div class="expand-one">
+                    <img src="images/africa-two.webp" alt="Lagos city in Africa" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>----- Our Services ------</h2>
+            <p class="serve">Let’s begin your journey to unforgettable experiences</p>
+            <div class="grid-services"></div>
+
+        </section>
+
+        <div class="fill-form">
+            <h3>Sign up to our Newsletter</h3>
+            <p>Get the latest travel news, tips, and exclusive offers delivered straight to your inbox.</p>
+            <form method="get" action="subscribe.html">
+                <div class="form-item column1">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <button type="submit">Sign Up For Updates</button>
+            </form>
+        </div>
+
+
+        <!-- Local Storage -->
+        <p><span class="todaydate"></span><span class="clickbutton"></span></p>
+    </main>
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">✈️✈️Prestige Travels✈️✈️</p>
+            <p>8 Taiwo Bashorun, Ekoro Lagos</p>
+            <p>Lagos, Nigeria.</p>
+            <p>prestige001@gmail.com</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="the-media">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+
+        <div class="foot-two">
+            <p>WDD231 Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

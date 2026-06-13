@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Travels</title>
+    <meta name="description"
+        content="Learn about Prestige Travels and Tours, your trusted partner for visa processing, travel bookings, and study abroad services.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="styles/travel-large.css">
+
+
+    <script src="scripts/travels.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="About Prestige Travels | Our Story & Mission">
+    <meta property="og:description"
+        content="Learn about Prestige Travels, our mission to create exceptional travel experiences, our values, and our commitment to helping travelers explore the world with confidence.">
+    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/finalproject/about.html">
+    <meta property="og:image" content="https://codesmith-eng.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Prestige Travels">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Prestige Travels" loading="lazy" width="80">
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="wayfinding">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="grid-about">
+        <div class="identity">
+            <h1>WHO WE ARE</h1>
+            <div class="book">
+                <a href="contact.html">Book an Appointment</a>
+            </div>
+        </div>
+
+        <section class="history">
+            <h2>✈✈YOUR TRUSTED PARTNER EVERY STEP OF THE JOURNEY✈✈</h2>
+            <div class="offers">
+                <img src="images/man-travelling.webp" alt="Man Travelling" loading="lazy">
+                <div>
+                    <p class="bold-two">✈️Welcome to <span class="bold-three">PRESTIGE Travels and Tours✈️</span></p>
+                    <p class="bold-four">At Prestige Travels and Tours, we make every journey simple, smooth, and
+                        enjoyable. Whether you are planning a holiday, a business trip, studying abroad, or relocating
+                        overseas, we handle the important details so you don’t have to worry. Our aim is to take the
+                        stress out of travel planning and give you a well-organized experience that fits your goals and
+                        budget. With a focus on reliability and customer care, we ensure every trip is properly planned
+                        from start to finish.
+                    </p>
+                    <p class="bold-four">We also help you navigate the often confusing travel process with ease. Our
+                        services include visa support, flight bookings, hotel reservations, tour arrangements, and
+                        professional travel advice. We guide you through each step clearly and efficiently to avoid
+                        delays and mistakes. Whether you are traveling for the first time or you travel often, Prestige
+                        Travels and Tours is here to make your journey easier, safer, and more affordable.</p>
+                    <ul class="bold-four-now">
+                        <li>Visa Guidance and Counselling</li>
+                        <li>Best Tour Selection</li>
+                        <li>Best Price Guarantee</li>
+                        <li>5 Star Accommodations</li>
+                        <li>24/7 Service</li>
+                </div>
+            </div>
+        </section>
+
+        <section class="value">
+            <h2>✈️✈️UNFORGETTABLE TRAVEL EXPERIENCES✈️✈️</h2>
+            <p class="val">Travel Destinations Available Worldwide</p>
+            <div class="comm">
+                <div class="comm-one">
+                    <h3 class="comm-two">Our Mission</h3>
+                    <button id="mod-one">Read More</button>
+                </div>
+
+                <div class="comm-three">
+                    <h3 class="comm-four">Our Vision</h3>
+                    <button id="mod-two">Read More</button>
+
+                </div>
+                <div class="comm-five">
+                    <h3 class="comm-six">Our Core Values</h3>
+                    <button id="mod-three">Read More</button>
+                    <!-- <p class="core-six">Authenticity, Passion, People, Loyalty, Evolve</p> -->
+                </div>
+            </div>
+
+            <dialog id="modal">
+                <p></p>
+                <button id="closeButton">X</button>
+            </dialog>
+
+            <p class="en">Convinced yet? Let’s make something great together.</p>
+            <p class="en-now">Book an Appointment with Us</p>
+            <a href="contact.html">Book an Appointment</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">✈️✈️Prestige Travels✈️✈️</p>
+            <p>8 Taiwo Bashorun, Ekoro Lagos</p>
+            <p>Lagos, Nigeria.</p>
+            <p>prestige001@gmail.com</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="the-media">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+
+        <div class="foot-two">
+            <p>WDD231 Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

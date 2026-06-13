@@ -29,15 +29,14 @@ footer {
   display: flex;
 }
 
-.now p {
+.now span {
   display: block;
-  width: 50%;
-  font-size: 1.2rem;
-  font-weight: 700;
+  width: clamp(40px, 40vw, 600px);
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  font-weight: 600;
   font-family: var(--font-family);
   color: var(--primary-color);
-  margin-top: 25px;
-
+  margin-top: 30px;
 }
 
 
@@ -80,7 +79,7 @@ header img {
 
 #menu {
   display: block;
-  font-size: 3.0rem;
+  font-size: 2.7rem;
   font-weight: 600;
   text-decoration: none;
   padding-left: .8rem;
@@ -365,8 +364,8 @@ footer {
 .socialmedia img {
   background-color: white;
   margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .socialmedia img:hover {
@@ -525,14 +524,15 @@ textarea[id="description"]:focus {
   grid-area: location;
   font-family: sans-serif;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #card-templates div button {
   display: block;
   margin: 0 auto;
-  padding: .8rem;
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  padding: .6rem;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   grid-area: button;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 2px solid #003366;

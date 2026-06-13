@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Travels</title>
+    <meta name="description"
+        content="Services page for Prestige Travels by Moses Olagbami, offering visa assistance, study abroad consultation, travel booking, and expert travel support.">
+    <meta name="author" content="Moses Olagbami Ayobami">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="styles/travel-large.css">
+
+    <script src="scripts/travels.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Prestige Travels | Travel Services & Solutions">
+    <meta property="og:description"
+        content="Explore the travel services offered by Prestige Travels, including flight bookings, tour packages, travel consultations, visa assistance, and trip planning.">
+    <meta property="og:url" content="https://codesmith-eng.github.io/wdd231/finalproject/services.html">
+    <meta property="og:image" content="https://codesmith-eng.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Prestige Travels">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Prestige Travels" loading="lazy" width="80">
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+        <nav class="hamb">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="wayfinding">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="travels">
+            <h1>WE OFFER EXPERT SERVICES</h1>
+        </div>
+
+        <section class="services">
+            <h2>✈️✈️ Our Services ✈️✈️</h2>
+            <p class="serve">Let’s begin your journey to unforgettable experiences</p>
+
+            <!-- generating the part with json using fetch api -->
+            <div class="grid-services"></div>
+
+        </section>
+
+        <section class="choose">
+            <h2>We Have Lots of Amazing Services Tailored For Your Needs</h2>
+        </section>
+
+        <section class="value">
+            <h2>✈️✈️Travel beyond your imagination, with our Travel Agency!✈️✈️</h2>
+            <p class="val">WHY CHOOSE US</p>
+            <div class="core-values">
+                <div class="border-one">
+                    <h3 class="core-one">Expert Visa Guidance</h3>
+                    <p clas="core-two">Our experienced consultants provide step-by-step support to ensure your visa
+                        application is accurate, complete, and professionally prepared, making the process smooth and
+                        stress-free</p>
+                </div>
+                <div class="border-two">
+                    <h3 class="core-three">Study Abroad Consultation</h3>
+                    <p class="core-four">We provide expert guidance to help you choose the right school and program,
+                        ensuring a smooth and successful study abroad journey from application to arrival.</p>
+                </div>
+                <div class="border-three">
+                    <h3 class="core-five">Great Customer Support
+                    </h3>
+                    <p class="core-six">We are always with you till you reach your desired destination.</p>
+                </div>
+            </div>
+
+            <p class="en">Convinced yet? Let’s make something great together.</p>
+            <p class="en-now">Book an Appointment with Us</p>
+            <a href="contact.html">Book an Appointment</a>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="foot-one">
+            <p class="bold">✈️✈️Prestige Travels✈️✈️</p>
+            <p>8 Taiwo Bashorun, Ekoro Lagos</p>
+            <p>Lagos, Nigeria.</p>
+            <p>prestige001@gmail.com</p>
+            <p>(+234)7032073483</p>
+        </div>
+
+        <nav class="the-media">
+            <a href="https://www.linkedin.com/in/olagbamimoses">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="50">
+            </a>
+            <a href="https://github.com/codesmith-eng/wdd231">
+                <img src="images/github.svg" alt="GitHub Icon" width="50">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.svg" alt="Twitter Icon" width="50">
+            </a>
+        </nav>
+
+        <div class="foot-two">
+            <p>WDD231 Project</p>
+            <p>Moses Olagbami | Nigeria</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+            </p>
+            <p>
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

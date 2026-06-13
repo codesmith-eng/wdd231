@@ -1,3 +1,10 @@
+@media screen and (min-width: 500px) {
+    .now span{
+        width: 100%;
+    }
+}
+
+
 @media screen and (min-width: 640px) {
 
     /* Re-arranging for wider views */
@@ -10,10 +17,10 @@
             "photograph button";
     }
 
-    .now p {
-        width: 100%;
+    .now span {
+        width: 50%;
         margin-top: 40px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: white;
     }
 
@@ -58,18 +65,18 @@
 
     header {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1.5fr 1.9fr;
         background-color: #003366;
     }
 
     header nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     header nav a {
         border: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-top: 20px;
     }
 
@@ -81,6 +88,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
 
     .divide{
         display: grid;

@@ -53,6 +53,7 @@ async function getCompany() {
         console.error("Error fetching companies:", error);
     }
 }
+
 getCompany();
 
 const displayCompany = (companies) => {

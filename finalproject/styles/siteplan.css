@@ -1,0 +1,12 @@
+h1,
+h2 {
+    color: #1a73e8;
+    font-family: "Roboto", sans-serif;
+}
+
+body,
+p {
+    color: #333333;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
