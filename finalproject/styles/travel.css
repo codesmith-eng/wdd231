@@ -40,6 +40,7 @@ main {
     height: auto;
     display: block;
     font-family: Roboto;
+    margin:0 auto;
 }
 
 header img {
@@ -174,7 +175,7 @@ nav.show {
     left: 50%;
     padding: 10px;
     border-radius: 6px;
-    width: 40%;
+    width: 50%;
 }
 
 .trip a {
@@ -234,9 +235,9 @@ nav.show {
 }
 
 .bold-two {
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .bold-three {
@@ -258,7 +259,7 @@ nav.show {
     text-align: center;
     padding: 5px;
     background-color: blue;
-    width: 60%;
+    width: 200px;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 6px;
@@ -619,7 +620,7 @@ button:hover {
     padding: 1.5rem;
     font-family: Roboto;
     width: 80%;
-    height: 350px;
+    height: 380px;
     line-height: 30px;
     background-color: rgb(235, 229, 229);
     display: block;
@@ -643,7 +644,7 @@ button:hover {
     padding: 1.5rem;
     font-family: Roboto;
     width: 80%;
-    height: 250px;
+    height: 350px;
     line-height: 30px;
     background-color: rgb(235, 229, 229);
     display: block;

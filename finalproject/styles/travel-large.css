@@ -70,6 +70,10 @@
         font-size: 1.3rem;
     }
 
+    .offers a {
+        width: 60%;
+    }
+
     input {
         padding: 1rem;
         font-size: 1.5rem;
@@ -90,6 +94,11 @@
     .border-three {
         width: 350px;
         margin: 0 auto;
+    }
+
+    .bold-two {
+        font-size: 2.5rem;
+        font-weight: 800;
     }
 
     .core-values {
@@ -136,7 +145,7 @@
     }
 
     header nav a {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
 
     }
 
