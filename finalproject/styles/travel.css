@@ -12,7 +12,7 @@
         'Lucida Sans',
         Arial,
         sans-serif;
-    --another-font: Arial;
+    --another-font: Roboto;
 }
 
 /* Using the universal selector (*) to control the page layout. 
@@ -41,7 +41,6 @@ main {
     height: auto;
     display: block;
     font-family: Roboto;
-    width: 100%;
 }
 
 header img {
@@ -134,7 +133,6 @@ nav.show {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
     color: rgb(11, 11, 69);
     font-weight: 900;
     display: block;
@@ -164,7 +162,6 @@ nav.show {
     left: 50%;
     transform: translateX(-50%);
     color: rgb(11, 11, 69);
-    width: 100%;
     padding: 20px;
     font-size: clamp(12px, 1.5vw, 20px);
     background-color: rgba(255, 255, 255, 0.5);
@@ -293,7 +290,6 @@ nav.show {
 .nav-button {
     text-align: center;
     margin: 20px;
-    display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -301,7 +297,6 @@ nav.show {
 
 .nav-button a {
     background-color: lightgrey;
-    width: 100px;
     text-align: center;
     padding: 10px;
     border-radius: 6px;
@@ -489,13 +484,14 @@ nav.show {
     padding: 10px;
 }
 
-.clickbutton{
+.clickbutton {
     display: none;
 }
 
-.appointdate{
+.appointdate {
     display: none;
 }
+
 .fill-form {
     display: block;
     text-align: center;
@@ -833,7 +829,6 @@ button:hover {
     border-radius: 5px;
     padding: 1rem;
     font-family: Roboto;
-    font-size: 1rem;
     font-size: 1.2rem;
 }
 
@@ -927,12 +922,14 @@ footer {
     border-bottom: 5px solid rgb(185, 152, 20);
 }
 
-.comm{
+.comm {
     text-align: center;
-    
+
 }
 
-.comm-one, .comm-three, .comm-five{
+.comm-one,
+.comm-three,
+.comm-five {
     background-color: rgb(229, 226, 246);
     padding: 1rem;
     width: 250px;
@@ -941,15 +938,16 @@ footer {
     margin-bottom: 10px;
 }
 
-.comm-one, .comm-three{
+.comm-one,
+.comm-three {
     margin-bottom: 1rem;
 }
 
-.comm h3{
+.comm h3 {
     font-size: 1.5rem;
 }
 
-#modal{
+#modal {
     text-align: center;
     padding: 2rem;
     box-shadow: 0 0 8rem #777;
@@ -960,11 +958,11 @@ footer {
     border-radius: 40px;
 }
 
-#modal p{
+#modal p {
     font-size: 1.2rem;
 }
 
-#closeButton{
+#closeButton {
     font-size: 1.2rem;
     padding: 10px 30px 10px 30px
 }
