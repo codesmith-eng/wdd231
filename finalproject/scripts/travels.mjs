@@ -23,30 +23,22 @@ const currentYear = new Date().getFullYear();
 //This code get the element with the id "currentyear" and and replace with the current year
 document.getElementById("currentyear").textContent = currentYear;
 
-//function for looping through the objects Ourservices
-function populateServices(selectElement, servicesArray) {
-    // Loop through each service object in the services array
-    servicesArray.forEach(service => {
-        // Create a new <option> element for the dropdown
-        const option = document.createElement("option");
 
-        // Set the value attribute of the option to the service id
-        option.value = service.id;
-        // Set the visible text of the option to the service name
-        option.textContent = service.name;
-        // Add the option to the select dropdown
-        selectElement.appendChild(option);
-    });
-}
+//get the element with the id "service" and store it in a variable called selectElement
+const selectElement = document.getElementById("support");
+
 
 //importing ourServices json from data in ourservices folder 
 import { ourServices } from "../data/ourservices.mjs";
 
-//get the element with the id "service" and store it in a variable called select
-const selectElement = document.getElementById("support");
 
+//importing populatingservices
+import { populateServices } from "./populate.mjs";
 
+//function call
 //check if the select element exists to protect it from interacting with other sections of code which may cause error
+//passing the json file "ourServices" and the grabbed html "selectElement", and passing it 
+// as paramter to the function call
 if (selectElement) {
     populateServices(selectElement, ourServices);
 }
@@ -246,61 +238,13 @@ const serviceUrl = './data/services.json';
 
 const theServices = document.querySelector(".grid-services");
 
+//importing the getservices function to this file
+import { getServices } from "./offers.mjs";
 
-// 1. Fetch data from your JSON source using async/await
-async function getServices() {
-    try {
-        const response = await fetch(serviceUrl);
-        const data = await response.json();
-
-        // Pass the array of all companies to our modified display function
-        displayServices(data.services);
-    } catch (error) {
-        console.error("Error fetching services:", error);
-    }
-}
+//passing the json url and the html to the function as parameter
+getServices(serviceUrl, theServices);
 
 
-getServices();
-
-
-//passing the parameter "services" to the function displayServices
-function displayServices(services) {
-
-    // Clear theServices element before creating new cards to avoid duplicates when filtering
-    if (!theServices) return;  //This line of code is used to prevent this function from running on pages it is not needed
-    theServices.innerHTML = "";
-
-    //service is the iterating variable each time through
-    services.forEach((service) => {
-        //creating HTML elements
-        let section = document.createElement("section");
-        let name = document.createElement("h2");
-        let category = document.createElement("span");
-        let description = document.createElement("p");
-        let image = document.createElement("img");
-
-        //putting the content of the json into the html's
-        name.innerHTML = `${service.name}`;
-        category.innerHTML = `<span>Category: </span>${service.category}`;
-        description.innerHTML = `${service.description}`;
-
-        image.setAttribute("src", service.image);
-        image.setAttribute("alt", service.category);
-        image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "100");
-        image.setAttribute("height", "100");
-
-        //appending the html to the section element
-        section.appendChild(name);
-        section.appendChild(category);
-        section.appendChild(description);
-        section.appendChild(image);
-
-        //appending everything to the grid-services html in service html page
-        theServices.appendChild(section);
-    })
-}
 
 
 const buttonOne = document.querySelector('#mod-one');
@@ -312,25 +256,34 @@ const dialogP = document.querySelector('#modal p');
 
 const close = document.querySelector('#closeButton');
 
-//adding content to the buttonOne
-buttonOne.addEventListener("click", () => {
-    dialogP.innerHTML = "Our mission is to create transformational positive change through our experiences which are aimed at capturing the soul of a city, a town or country in a way that allows our guests see the world differently"
-    dialogBox.showModal(); // display the content of buttonOne one when it is clicked
-})
+if (buttonOne) {
+    //adding content to the buttonOne
+    buttonOne.addEventListener("click", () => {
+        dialogP.innerHTML = "Our mission is to create transformational positive change through our experiences which are aimed at capturing the soul of a city, a town or country in a way that allows our guests see the world differently"
+        dialogBox.showModal(); // display the content of buttonOne one when it is clicked
+    })
+}
 
-//adding content to the buttonTwo
-buttonTwo.addEventListener("click", () => {
-    dialogP.innerHTML = "To create a world with limitless destinations that encourages societal, cultural and economic benefits through tourism"
-    dialogBox.showModal(); // display the content of buttonTwo one when it is clicked
-})
+if (buttonTwo) {
+    //adding content to the buttonTwo
+    buttonTwo.addEventListener("click", () => {
+        dialogP.innerHTML = "To create a world with limitless destinations that encourages societal, cultural and economic benefits through tourism"
+        dialogBox.showModal(); // display the content of buttonTwo one when it is clicked
+    })
+}
 
-//adding content to the buttonThree
-buttonThree.addEventListener("click", () => {
-    dialogP.innerHTML = "Authenticity, Passion, People, Loyalty, Evolve"
-    dialogBox.showModal(); // display the content of buttonThree one when it is clicked
-})
+if (buttonThree) {
+    //adding content to the buttonThree
+    buttonThree.addEventListener("click", () => {
+        dialogP.innerHTML = "Authenticity, Passion, People, Loyalty, Evolve"
+        dialogBox.showModal(); // display the content of buttonThree one when it is clicked
+    })
+}
 
-//close the modal when this button is click 
-close.addEventListener("click", () => {
-    dialogBox.close(); //using close method to close the modal
-})
+
+if (close) {
+    //close the modal when this button is click 
+    close.addEventListener("click", () => {
+        dialogBox.close(); //using close method to close the modal
+    })
+}
