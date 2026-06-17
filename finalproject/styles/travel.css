@@ -40,7 +40,7 @@ main {
     height: auto;
     display: block;
     font-family: Roboto;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 header img {
@@ -970,4 +970,13 @@ footer {
 /* use backdrop anytime you use modal or dialog box */
 ::backdrop {
     background-color: rgba(179, 202, 223, 0.5);
+}
+
+footer>a:last-child {
+    grid-column: 1 / -1;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 40px;
 }

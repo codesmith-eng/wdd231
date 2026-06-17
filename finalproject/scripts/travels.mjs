@@ -35,7 +35,7 @@ import { ourServices } from "../data/ourservices.mjs";
 //importing populatingservices
 import { populateServices } from "./populate.mjs";
 
-//function call
+//functio   n call
 //check if the select element exists to protect it from interacting with other sections of code which may cause error
 //passing the json file "ourServices" and the grabbed html "selectElement", and passing it 
 // as paramter to the function call
