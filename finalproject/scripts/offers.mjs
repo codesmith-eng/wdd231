@@ -3,16 +3,17 @@
 //the async function was the one exported because displayServices was part of its body
 export async function getServices(serviceUrl, theServices) {
     try {
-        const response = await fetch(serviceUrl);
-        const data = await response.json();
+        const response = await fetch(serviceUrl); //fetching data from json using fetch api
+        const data = await response.json(); //converting the data to readable format
 
+        //passing the data and html as parameter to the function displayServices
         displayServices(data.services, theServices);
     } catch (error) {
-        console.error("Error fetching services:", error);
+        console.error("Error fetching services:", error); //error to display if the asynchronous function fails
     }
 }
 
-//the html and variable for iteration was passed as parameter to the function
+//passing the parameters the appropriate parameters to the function as it was passed at the top in the async function
 function displayServices(services, theServices) {
 
     if (!theServices) return;
